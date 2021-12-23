@@ -20,6 +20,15 @@ export const App = () => {
       <main>
         <p>らっこの可愛さをわからせる</p>
         <img src={dogUrl} alt="らっこの画像" width="300" height="300" />
+        <button
+          onClick={() =>
+            setDogUrl(
+              'https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg',
+            )
+          }
+        >
+          更新
+        </button>
       </main>
     </body>
   )
