@@ -11,8 +11,8 @@ import './App.css'
  */
 export const App = () => {
   // fetch state
-  const [error, setError] = useState(null)
-  const [isLoaded, setIsLoaded] = useState(false)
+  // const [error, setError] = useState(null)
+  // const [isLoaded, setIsLoaded] = useState(false)
   // state
   const [dogUrl, setDogUrl] = useState(
     'https://images.dog.ceo/breeds/dhole/n02115913_4117.jpg',
@@ -52,16 +52,9 @@ export const App = () => {
           onClick={() => {
             fetch('https://dog.ceo/api/breeds/image/random')
               .then(res => res.json())
-              .then(
-                result => {
-                  setIsLoaded(true)
-                  setDogUrl(result.message)
-                },
-                error => {
-                  setIsLoaded(true)
-                  setError(error)
-                },
-              )
+              .then(result => {
+                setDogUrl(result.message)
+              })
           }}
         >
           更新
