@@ -9,8 +9,19 @@ import './App.css'
  */
 export const App = () => {
   return (
-    <header>
-      <p>らっこのめいちゃん</p>
-    </header>
+    <body>
+      <header>
+        <p>らっこのめいちゃん</p>
+      </header>
+      <main>
+        <p>らっこの可愛さをわからせる</p>
+        <img
+          src="https://images.dog.ceo/breeds/dhole/n02115913_4117.jpg"
+          alt="らっこの画像"
+          width="300"
+          height="300"
+        />
+      </main>
+    </body>
   )
 }
