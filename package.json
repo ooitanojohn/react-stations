@@ -7,6 +7,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@mui/material": "^5.2.5",
+    "destyle.css": "^3.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
